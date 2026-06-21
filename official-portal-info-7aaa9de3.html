@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于 ayx · 站点说明与介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #1e1e1f;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            padding: 2.5rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 680px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 3rem 2.2rem;
+            border-radius: 28px;
+            box-shadow: 0 8px 28px rgba(0,0,0,0.02), 0 2px 6px rgba(0,0,0,0.03);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 550;
+            letter-spacing: -0.015em;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+            color: #141416;
+        }
+
+        .lead {
+            font-size: 1.05rem;
+            color: #5c5c66;
+            margin-bottom: 2rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 500;
+            margin-top: 2.2rem;
+            margin-bottom: 0.6rem;
+            color: #1e1e1f;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: #2a2a2e;
+        }
+
+        .accent-line {
+            background: #f2f4f6;
+            padding: 1.25rem 1.5rem;
+            border-radius: 20px;
+            margin: 1.8rem 0;
+            border-left: 4px solid #3b3b40;
+            font-size: 0.95rem;
+            color: #1e1e1f;
+        }
+
+        .accent-line strong {
+            font-weight: 550;
+            color: #000;
+        }
+
+        .inline-link {
+            color: #1a1a1f;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .inline-link:hover {
+            color: #4a4a50;
+        }
+
+        .meta-note {
+            margin-top: 2.8rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #ececec;
+            font-size: 0.9rem;
+            color: #6f6f77;
+            line-height: 1.6;
+        }
+
+        .meta-note a {
+            color: #3b3b40;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        @media (max-width: 540px) {
+            body {
+                padding: 1rem 0.75rem;
+            }
+            .page {
+                padding: 2rem 1.25rem;
+                border-radius: 20px;
+            }
+            h1 {
+                font-size: 1.7rem;
+            }
+            .lead {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <h1>关于 ayx · 站点说明</h1>
+    <div class="lead">作为数字服务接口，ayx 致力于提供直接、透明的信息通路。本文从功能定位与可信验证角度，对平台做简要说明。</div>
+
+    <p>在互联网工具型站点日益繁杂的背景下，<a href="https://official-portal-ayx.com" class="inline-link">ayx</a> 的设计初衷保持明确：以低冗余、高效率的方式，让访问者快速触及核心服务。整个页面结构围绕信息清晰度展开，没有多余导流或模糊指引。</p>
+
+    <p>平台面向的用户群体比较宽泛，但始终遵循几条基本原则：内容真实可溯源，功能入口唯一且稳定，不设置诱导行为或隐藏条款。无论是初次接触还是长期使用者，都可以在几分钟内确认站点用途与边界。</p>
+
+    <h2>可信说明</h2>
+    <p>域名 official-portal-ayx.com 经过基础备案与实名核验，持有者信息可在对应注册局查询。页面所有指向<a href="https://official-portal-ayx.com" class="inline-link">ayx</a>的资源路径均使用 HTTPS 协议，没有第三方重定向或中间跳转。静态资源与 API 端点分离，数据交互逻辑可被标准浏览器开发者工具完整审计。</p>
+
+    <p>平台不采集用户位置、设备指纹或行为轨迹。仅当访问者主动提交表单时，才会按照明确提示收集必要字段。所有通信均加密，且不向未披露的第三方传输数据。</p>
+
+    <div class="accent-line">
+        <strong>提示</strong> · 如果你通过搜索引擎或其他渠道访问到此介绍页，请注意核对 URL 是否为 <strong>https://official-portal-ayx.com</strong>。任何外观相似但域名不同的站点，均与 <a href="https://official-portal-ayx.com" class="inline-link">ayx</a> 无关。
+    </div>
+
+    <h2>适用场景概述</h2>
+    <p>从实际使用反馈来看，ayx 主要被用于以下两类场景：一是需要快速获取特定服务入口的用户，他们更看重响应速度与界面一致性；二是从事技术验证或站点评估的从业者，需要在一个干净环境中测试接口或文档逻辑。两种场景下，平台均保持相同的可用标准。</p>
+
+    <p>未来版本迭代会延续当前的极简框架，不会突然增加广告模块或强制注册流程。任何重大变更都会在站点内以明显方式公告。</p>
+
+    <h2>常见疑问摘要</h2>
+    <p><strong>Q：ayx 是否需要注册才能使用？</strong><br>目前核心功能无需注册，部分个性化选项可能在未来以可选方式提供，但不会成为强制门槛。</p>
+    <p><strong>Q：如何确认当前访问的是正版站点？</strong><br>请直接输入 <a href="https://official-portal-ayx.com" class="inline-link">ayx</a> 的完整域名，不要依赖第三方链接或镜像站。同时建议浏览器地址栏出现绿色锁标识后再进行任何操作。</p>
+    <p><strong>Q：遇到页面异常或链接失效怎么办？</strong><br>可尝试清除浏览器缓存并重新加载，或检查网络环境是否限制了 HTTPS 流量。若问题持续，可通过站点内预留的反馈渠道说明。</p>
+
+    <div class="meta-note">
+        <span>本页仅作为描述性介绍，不构成法律或商业承诺。所有信息以 <a href="https://official-portal-ayx.com">ayx</a> 实际页面为准。最后更新：最近一个季度。</span>
+    </div>
+
+</div>
+</body>
+</html>
